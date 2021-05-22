@@ -21,9 +21,12 @@ ol {
   --main-color: #212121;
   --primary-color: #ffffff;
   --description-text-color: #757575;
+  --hero-bg-clr: #c4c4c4;
   --hero-title-background-color: #2f303a;
+  --hero-gradient-clr: rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4);
   --sections-background-color: #f5f4fa;
   --logo-link-clr: #000000;
+  --social-link-bg: rgba(255, 255, 255, 0.1);
   --footer-text-clr: rgba(255, 255, 255, 0.6);
   --mdl-btn-clr-hvr: #188ce8;
   --brdr-clr: #eeeeee;
@@ -193,11 +196,8 @@ img {
 .hero {
   text-align: center;
   padding: 200px 0;
-  background-color: #c4c4c4;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
+  background-color: var(--hero-bg-clr);
+  background-image: linear-gradient(var(--hero-gradient-clr)),
     url("/images/bg.jpg");
   background-size: cover;
   max-width: 1600px;
@@ -323,6 +323,7 @@ img {
 }
 
 .team-item {
+  flex-basis: calc((100% - 90px) / 4);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -455,7 +456,7 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--social-link-bg);
 }
 
 .footer-socials {

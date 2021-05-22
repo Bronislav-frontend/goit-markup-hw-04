@@ -198,7 +198,7 @@ img {
   padding: 200px 0;
   background-color: var(--hero-bg-clr);
   background-image: linear-gradient(var(--hero-gradient-clr)),
-    url("/images/bg.jpg");
+    url("../images/bg.jpg");
   background-size: cover;
   max-width: 1600px;
 }

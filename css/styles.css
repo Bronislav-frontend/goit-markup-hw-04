@@ -68,8 +68,8 @@ img {
   height: 20px;
 }
 
-.social-item:hover .social-logo,
-.social-item:focus .social-logo {
+.social-link:hover .social-logo,
+.social-link:focus .social-logo {
   fill: var(--primary-color);
 }
 
@@ -201,6 +201,8 @@ img {
     url("../images/bg.jpg");
   background-size: cover;
   max-width: 1600px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero-title {
@@ -385,13 +387,13 @@ img {
 
 .footer-section {
   display: flex;
+  padding: 60px 0;
   align-items: baseline;
   background-color: var(--hero-title-background-color);
 }
-
-.adress-section {
-  padding: 60px 0;
-  align-self: baseline;
+.footer-info {
+  display: flex;
+  align-items: baseline;
 }
 
 .footer-link {
@@ -423,8 +425,6 @@ img {
 
 .social-section {
   margin-left: 70px;
-  padding-top: 72px;
-  padding-bottom: 100px;
 }
 
 .social-links-title {
@@ -504,10 +504,15 @@ img {
   margin-right: 0px;
 }
 
-.cards-item:hover,
-.cards-item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+.cards-link {
+  display: block;
+}
+
+.cards-link:hover,
+.cards-link:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 .cards-text {

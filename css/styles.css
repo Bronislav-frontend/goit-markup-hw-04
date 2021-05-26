@@ -386,9 +386,7 @@ img {
 /*Footer*/
 
 .footer-section {
-  display: flex;
   padding: 60px 0;
-  align-items: baseline;
   background-color: var(--hero-title-background-color);
 }
 .footer-info {
